@@ -1,0 +1,64 @@
+html,body{
+    margin : 0 ;
+}
+
+
+.container{
+    background-color: black;
+    width:100%; /* 검정꽉참 */
+    height:100vh;
+    display : flex;
+}
+
+.color{
+    height :100%;  /* 꽉참 */
+    display : flex; 
+    justify-content: center; /* 글자 가운데로 */
+    align-items: flex-end; /* 아래로 */
+    cursor : pointer;
+    transition:0.2s opacity; /* 누르면 0.2초후 반응 효과 */
+    }
+
+/* 누르면 효과 */
+.color:active {
+ opacity : 0.8;
+}
+
+.color span {
+    font-size:2rem;
+    margin-bottom: 2rem;
+    color : white;
+    text-shadow: 2px 2px black;
+}
+
+/* 검색창가운데 */
+#form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+/*검색창*/
+#form input[type="text"] {
+    font-size : 1rem;
+    padding :10px;
+    border:2px solid white;
+    background-color: #f2f2f2;
+    outline:0;
+    width: 300px;
+}
+
+/*버튼*/
+.btn{
+    font-size:1rem;
+    padding: 10px;
+    border:2px solid white;
+    background-color: #4caf50;
+    color : white;
+    transition:0.2s opacity;
+}
+
+.btn:hover   {
+    opacity:0.8;
+}
